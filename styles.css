@@ -1,0 +1,75 @@
+body{
+    font-family: 'Fondamento', cursive;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.title{
+    margin: 0;
+    padding: 3%;
+    font-size: 28px;
+}
+
+#purpose{
+    background-color: white;
+    margin: 0;
+    color: black;
+    height: 270px;
+}
+
+#who-are-you{
+    background-color: black;
+    margin: 0;
+    color: white;
+    width: 100%;
+    height: 270px;
+    line-height: 275px;
+    display: flex;
+    text-align: center;
+}
+
+.artist{
+    width: 100%;
+    border-right: 0.1px solid white;
+}
+.artist p{
+    margin: 0;
+    font-size: 28px;
+}
+
+.wanna-tattoo{
+    width: 100%;
+    border-left: 0.1px solid white;
+}
+.wanna-tattoo p{
+    margin: 0;
+    font-size: 28px;
+}
+
+#tattoo-artist{
+    background-color: white;
+    margin: 0;
+    color: black;
+    width: 100%;
+    height: 600px;
+}
+
+#tattoos{
+    background-color: black;
+    margin: 0;
+    color: white;
+    width: 100%;
+    height: 600px;
+}
