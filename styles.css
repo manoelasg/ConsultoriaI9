@@ -14,6 +14,7 @@ h1{
     text-align: center;
     margin: 0;
     color: white;
+    font-size: 62px;
 }
 
 .title{
@@ -46,7 +47,11 @@ h1{
 }
 .artist p{
     margin: 0;
-    font-size: 28px;
+    font-size: 50px;
+}
+.artist p:hover{
+    color: darkred;
+    cursor: pointer;
 }
 
 .wanna-tattoo{
@@ -55,7 +60,11 @@ h1{
 }
 .wanna-tattoo p{
     margin: 0;
-    font-size: 28px;
+    font-size: 50px;
+}
+.wanna-tattoo p:hover{
+    color: darkred;
+    cursor: pointer;
 }
 
 #tattoo-artist{
