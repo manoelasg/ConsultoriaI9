@@ -3,18 +3,20 @@ body{
     margin: 0;
 }
 
-header{
-    background-color: black;
+#purpose{
+    margin: 0;
+    color: black;
+    height: 650px;
+    line-height: 650px;
+    text-align: center;
+    font-size: 62px;
+    border-bottom: 1px solid black; /* bordas apenas para delimitar a sessão antes de ter a imagem */
+    background-image: url(images/tattoobanner.jpg); /* TROQUE AQUI A IMAGEM DE FUNDO! */
     width: 100%;
-    height: 120px;
-    line-height: 120px;
 }
 
-h1{
-    text-align: center;
+#purpose p{
     margin: 0;
-    color: white;
-    font-size: 62px;
 }
 
 .title{
@@ -23,27 +25,20 @@ h1{
     font-size: 28px;
 }
 
-#purpose{
-    background-color: white;
+#who-are-you{
     margin: 0;
     color: black;
-    height: 270px;
-}
-
-#who-are-you{
-    background-color: black;
-    margin: 0;
-    color: white;
     width: 100%;
     height: 270px;
     line-height: 275px;
     display: flex;
     text-align: center;
+    border-bottom: 0.1px solid black;
 }
 
 .artist{
     width: 100%;
-    border-right: 0.1px solid white;
+    border-right: 0.1px solid black;
 }
 .artist p{
     margin: 0;
@@ -52,6 +47,7 @@ h1{
 .artist p:hover{
     color: darkred;
     cursor: pointer;
+    font-size: 60px;
 }
 
 .wanna-tattoo{
@@ -65,10 +61,10 @@ h1{
 .wanna-tattoo p:hover{
     color: darkred;
     cursor: pointer;
+    font-size: 60px;
 }
 
 #tattoo-artist{
-    background-color: white;
     margin: 0;
     color: black;
     width: 100%;
@@ -76,9 +72,70 @@ h1{
 }
 
 #tattoos{
-    background-color: black;
     margin: 0;
-    color: white;
+    color: black;
     width: 100%;
     height: 600px;
+    border-top: 0.1px solid black;
+}
+
+#tattoos .tattoos-ao-lado{
+    width: 100%;
+    font-size: 48px;
+}
+
+#tattoos .banner{
+    padding: 50px 50px 50px 50px;
+    display: flex;
+}
+
+#tattoos .banner div{
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    display: none;
+    margin: 0;
+}
+
+#tattoos .banner div.slide1{
+    background-color: lightblue;
+}
+#tattoos .banner div.slide2{
+    background-color: lightgreen;
+}
+#tattoos .banner div.slide3{
+    background-color: pink;
+}
+
+#tattoos .banner div.tatuador1{
+    max-width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    position: absolute;
+    margin: 200px 0 0 400px;
+    color: white;
+}
+#tattoos .banner div.tatuador2{
+    max-width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    position: absolute;
+    margin: 200px 0 0 400px;
+    color: white;
+}
+#tattoos .banner div.tatuador3{
+    max-width: 100px;
+    height: 100px;
+    background-color: darkred;
+    position: absolute;
+    margin: 200px 0 0 400px;
+    color: white;
+}
+
+#tattoos .banner div.active{
+    display: block;
+}
+
+@media (max-width: 800px) {
+
 }
