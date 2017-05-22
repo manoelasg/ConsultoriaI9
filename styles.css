@@ -336,12 +336,21 @@ body{
 
 #tattoos .banner div.slide1{
     background-color: lightblue;
+    background-image: url('images/imagem1.jpg');
+    background-size: 50%;
 }
 #tattoos .banner div.slide2{
     background-color: lightgreen;
+    background-image: url('images/imagem2.jpg');
+    background-size: 100%;
 }
 #tattoos .banner div.slide3{
     background-color: pink;
+    background-image: url('images/imagem3.jpg');
+    background-size: 110%;
+    background-position: -19%;
+
+
 }
 
 #tattoos .banner div.tatuador1{
@@ -351,6 +360,8 @@ body{
     position: absolute;
     margin: 200px 0 0 400px;
     color: white;
+    background-image: url('images/tatoo1.jpg');
+    background-size: 100%;
 }
 #tattoos .banner div.tatuador2{
     max-width: 100px;
@@ -359,6 +370,8 @@ body{
     position: absolute;
     margin: 200px 0 0 400px;
     color: white;
+    background-image: url('images/tatoo2.jpg');
+    background-size: 100%;
 }
 #tattoos .banner div.tatuador3{
     max-width: 100px;
@@ -367,6 +380,9 @@ body{
     position: absolute;
     margin: 200px 0 0 400px;
     color: white;
+    background-image: url('images/tatoo3.jpg');
+    background-size: 150%;
+
 }
 
 #tattoos .banner div.active{

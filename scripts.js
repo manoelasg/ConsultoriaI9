@@ -18,7 +18,7 @@ var planoAtivo = '';
 var resultado = document.querySelector('p');
 var valorPlanoTatuador = planoTatuador.value;
 var bannerAtivo = 0;
-var velocidade = 5000; // 5 segundos a principio
+var velocidade = 1000; // 5 segundos a principio
 
 // Lógica do Tatuador
 function ativarPlano(item) {
@@ -64,4 +64,4 @@ function avancarBanner(){
     tatuadores[bannerAtivo].classList.add('active');
 }
 
-setInterval(avancarBanner,velocidade);
+  setInterval(avancarBanner,velocidade);
