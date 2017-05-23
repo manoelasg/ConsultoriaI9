@@ -65,6 +65,9 @@ body{
 .nav-tattoos{
     margin-left: 20px;
 }
+.nav-contato{
+    margin-left: 20px;
+}
 
 #purpose{
     margin: 0;
@@ -311,7 +314,7 @@ body{
     margin: 0;
     color: black;
     width: 100%;
-    height: 800px;
+    height: 650px;
     background-color: #E65100;
 }
 
@@ -319,10 +322,12 @@ body{
     width: 100%;
     font-size: 48px;
     color: #FFEEC2;
+    text-align: right;
+    margin-right: 100px;
 }
 
 #tattoos .banner{
-    padding: 50px 50px 50px 50px;
+    padding: 100px 50px 75px 50px;
     display: flex;
 }
 
@@ -332,6 +337,7 @@ body{
     height: 300px;
     display: none;
     margin: 0;
+    border-radius: 10px;
 }
 
 #tattoos .banner div.slide1{
@@ -387,6 +393,27 @@ body{
 
 #tattoos .banner div.active{
     display: block;
+}
+
+#contato{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #000;
+    color: #FFEEC2;
+    font-size: 24px;
+    margin: 0;
+}
+
+#contato .p-contato{
+    margin: 0;
+}
+
+#contato .p-contato span{
+    margin: 0;
+    color: #E65100;
+    font-style: italic;
 }
 
 @media (max-width: 800px) {
