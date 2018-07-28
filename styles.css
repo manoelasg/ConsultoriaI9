@@ -30,19 +30,19 @@ body{
     clear: both;
 }
 
-#navegacao{
+#nav{
     float: right;
     z-index: 2;
 }
 
-.lista-navegacao{
+.nav-list{
     display: inline-flex;
     list-style-type: none;
     margin-right: 30px;
     z-index: 3;
 }
 
-.lista-navegacao li a{
+.nav-list li a{
     font-size: 28px;
     color: #FFEEC2;
     padding: 5px;
@@ -50,8 +50,7 @@ body{
     z-index: 4;
 }
 
-.lista-navegacao li a:hover{
-    font-size: 30px;
+.nav-list li a:hover{
     cursor: pointer;
     color: #E65100;
 }
@@ -84,7 +83,7 @@ body{
     font-weight: bold;
 }
 
-#purpose .plataforma{
+#purpose .plataform{
     margin: 0;
     color: #FFEEC2;
     height: 150px;
@@ -107,32 +106,32 @@ body{
     font-size: 72px;
 }
 
-.passos{
+.steps{
     display: flex;
 }
 
-.passos div{
+.steps div{
     width: 400px;
     background-color: white;
 }
 
-.passos .passo1{
+.steps .step1{
     border-right: 1px solid lightgray;
 }
 
-.passos .passo2{
+.steps .step2{
     border-right: 1px solid lightgray;
 }
 
-.passos .passo3{
+.steps .step3{
     border-right: 1px solid lightgray;
 }
 
-.passos .passo4{
+.steps .step4{
 
 }
 
-.passos div .passo{
+.steps div .step{
     margin: 0;
     height: 100px;
     line-height: 100px;
@@ -140,7 +139,7 @@ body{
     font-size: 32px;
 }
 
-.passos div img{
+.steps div img{
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -148,7 +147,7 @@ body{
     width: 100px;
 }
 
-.passos div .texto{
+.steps div .text{
     margin: 0 0 30px 0;
     text-align: center;
     font-size: 14px;
@@ -170,7 +169,7 @@ body{
     background-color: #000;
 }
 
-#tattoo-artist .simule{
+#tattoo-artist .simulate{
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -179,12 +178,12 @@ body{
     color: #FFEEC2;
 }
 
-#tattoo-artist .form-tatuador{
+#tattoo-artist .form-tattoo-artist{
     display: flex;
     padding-bottom: 100px;
 }
 
-#tattoo-artist .plano{
+#tattoo-artist .plan{
     margin: 10px 50px 0 50px;
     padding-top: 10px;
     text-align: center;
@@ -237,7 +236,7 @@ body{
     color: #AEEA00;
 }
 
-#tattoo-artist .portifolio{
+#tattoo-artist .portfolio{
     margin: 10px 50px 0 50px;
     padding-top: 10px;
     text-align: center;
@@ -248,14 +247,14 @@ body{
     border-radius: 15px;
 }
 
-#tattoo-artist .portifolio label{
+#tattoo-artist .portfolio label{
     display: block;
     margin-top: 20px;
     color: #FFEEC2;
     font-size: 24px;
 }
 
-#tattoo-artist .portifolio input{
+#tattoo-artist .portfolio input{
     display: block;
     width: 200px;
     height: 50px;
@@ -269,7 +268,7 @@ body{
     border-radius: 5px;
 }
 
-#tattoo-artist .portifolio button{
+#tattoo-artist .portfolio button{
     display: block;
     width: 150px;
     height: 50px;
@@ -282,7 +281,7 @@ body{
     border: 2px outset;
 }
 
-#tattoo-artist .resultado{
+#tattoo-artist .result{
     margin: 10px 50px 0 50px;
     padding-top: 10px;
     text-align: center;
@@ -293,13 +292,13 @@ body{
     border-radius: 15px;
 }
 
-#tattoo-artist .resultado1{
+#tattoo-artist .result1{
     margin-top: 20px;
     font-size: 24px;
     color: #FFEEC2;
 }
 
-#tattoo-artist .resultado2{
+#tattoo-artist .result2{
     margin-top: 20px;
     font-size: 24px;
     color: #FFEEC2;
@@ -318,7 +317,7 @@ body{
     background-color: #E65100;
 }
 
-#tattoos .tattoos-ao-lado{
+#tattoos .side-tattoos{
     width: 100%;
     font-size: 48px;
     color: #FFEEC2;
@@ -342,24 +341,24 @@ body{
 
 #tattoos .banner div.slide1{
     background-color: lightblue;
-    background-image: url('images/imagem1.jpg');
+    background-image: url('images/image1.jpg');
     background-size: 50%;
 }
 #tattoos .banner div.slide2{
     background-color: lightgreen;
-    background-image: url('images/imagem2.jpg');
+    background-image: url('images/image2.jpg');
     background-size: 100%;
 }
 #tattoos .banner div.slide3{
     background-color: pink;
-    background-image: url('images/imagem3.jpg');
+    background-image: url('images/image3.jpg');
     background-size: 110%;
     background-position: -19%;
 
 
 }
 
-#tattoos .banner div.tatuador1{
+#tattoos .banner div.tattoo-artist1{
     max-width: 100px;
     height: 100px;
     background-color: darkblue;
@@ -369,7 +368,7 @@ body{
     background-image: url('images/tatoo1.jpg');
     background-size: 100%;
 }
-#tattoos .banner div.tatuador2{
+#tattoos .banner div.tattoo-artist2{
     max-width: 100px;
     height: 100px;
     background-color: darkgreen;
@@ -379,7 +378,7 @@ body{
     background-image: url('images/tatoo2.jpg');
     background-size: 100%;
 }
-#tattoos .banner div.tatuador3{
+#tattoos .banner div.tattoo-artist3{
     max-width: 100px;
     height: 100px;
     background-color: darkred;
@@ -395,7 +394,7 @@ body{
     display: block;
 }
 
-#contato{
+#contact{
     width: 100%;
     height: 100px;
     line-height: 100px;
@@ -406,11 +405,11 @@ body{
     margin: 0;
 }
 
-#contato .p-contato{
+#contact .p-contact{
     margin: 0;
 }
 
-#contato .p-contato span{
+#contact .p-contact span{
     margin: 0;
     color: #E65100;
     font-style: italic;
