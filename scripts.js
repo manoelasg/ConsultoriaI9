@@ -1,67 +1,67 @@
 // Buscando elementos para a lógica
 var banners = document.querySelectorAll('.slide1,.slide2,.slide3');
-var tatuadores = document.querySelectorAll('.tatuador1,.tatuador2,.tatuador3');
-var planoTatuador = document.querySelectorAll('.plano input');
-var portifolioTatuador = document.querySelector('.portifolio input');
-var botaoCalcularPlano = document.querySelector('.portifolio button');
-var resultado2 = document.querySelector('.resultado2');
+var tattooArtists = document.querySelectorAll('.tattoo-artist1,.tattoo-artist2,.tattoo-artist3');
+var tattooArtistPlan = document.querySelectorAll('.plan input');
+var tattooArtistPortfolio = document.querySelector('.portfolio input');
+var calculatePlanButton = document.querySelector('.portfolio button');
+var result2 = document.querySelector('.result2');
 
 // Variável fixa de valor para os planos
-var valorPlano = {
-    semanal: 1.50, // 1,50 por foto - disponível durante uma semanal
-    mensal: 4.80, // 4,80 por foto - disponível durante um mes
-    anual: 10.00 // 10,00 por foto - disponível durante um ano
+var planValue = {
+    weekly: 1.50, // 1,50 por foto - disponível durante um semana
+    monthly: 4.80, // 4,80 por foto - disponível durante um mes
+    annual: 10.00 // 10,00 por foto - disponível durante um ano
 };
 
 // Variáveis globais do banner
-var planoAtivo = '';
-var resultado = document.querySelector('p');
-var valorPlanoTatuador = planoTatuador.value;
-var bannerAtivo = 0;
-var velocidade = 1000; // 5 segundos a principio
+var activePlan = '';
+var result = document.querySelector('p');
+var tattooArtistValuePlan = tattooArtistPlan.value;
+var activeBanner = 0;
+var velocity = 1000; // 5 segundos a principio
 
 // Lógica do Tatuador
-function ativarPlano(item) {
-    item.addEventListener('click', alterarPlanoAtivo);
+function activatePlan(item) {
+    item.addEventListener('click', alterActivePlan);
 }
 
-function alterarPlanoAtivo() {
-    planoAtivo = this.id;
+function alterActivePlan() {
+    activePlan = this.id;
 }
 
-function calcularPlano() {
-    if(portifolioTatuador.value==''){
+function calculatePlan() {
+    if(tattooArtistPortfolio.value==''){
         alert("Digite um valor.")
         return
-    }else if(isNaN(portifolioTatuador.value)){
+    }else if(isNaN(tattooArtistPortfolio.value)){
         alert("Digite um valor em números.")
         return
-    }else if(planoAtivo.id==''){
+    }else if(activePlan.id==''){
         alert("Escolha um plano.");
         return
     }else{
-        var resultadoPlano = portifolioTatuador.value*parseFloat(valorPlano[planoAtivo]);
-        resultado2.innerHTML=('O seu plano ' + planoAtivo + ' custará R$' + resultadoPlano.toFixed(2).toString().replace('.',',') + '.');
-        resultado2.classList.add('active');
+        var resultPlan = tattooArtistPortfolio.value*parseFloat(planValue[activePlan]);
+        result2.innerHTML=('O seu plano ' + activePlan + ' custará R$' + resultPlan.toFixed(2).toString().replace('.',',') + '.');
+        result2.classList.add('active');
     }
 }
 
-botaoCalcularPlano.addEventListener('click',calcularPlano);
-planoTatuador.forEach(ativarPlano);
+calculatePlanButton.addEventListener('click',calculatePlan);
+tattooArtistPlan.forEach(activatePlan);
 
 // Lógica do Banner
-function avancarBanner(){
-    banners[bannerAtivo].classList.remove('active');
-    tatuadores[bannerAtivo].classList.remove('active');
+function advanceBanner(){
+    banners[activeBanner].classList.remove('active');
+    tattooArtists[activeBanner].classList.remove('active');
 
-    bannerAtivo++;
+    activeBanner++;
 
-    if(bannerAtivo >= banners.length){
-        bannerAtivo = 0;
+    if(activeBanner >= banners.length){
+        activeBanner = 0;
     }
 
-    banners[bannerAtivo].classList.add('active');
-    tatuadores[bannerAtivo].classList.add('active');
+    banners[activeBanner].classList.add('active');
+    tattooArtists[activeBanner].classList.add('active');
 }
 
-  setInterval(avancarBanner,velocidade);
+  setInterval(advanceBanner,velocity);
